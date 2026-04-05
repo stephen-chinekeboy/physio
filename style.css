@@ -4,18 +4,17 @@
   box-sizing: border-box;
 }
 
-/* header {
+header {
   font-family: 'Roboto' , sans-serif;
   padding: 5px 40px;
-} */
+}
 
 nav {
   display: flex;
   min-height: 70px;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto' , sans-serif;
-  padding: 5px 40px;
+
 
   position: fixed;
   z-index: 1000;
@@ -87,7 +86,7 @@ a {
   align-items: start;
   text-align: start;
   position: relative;
-  padding-top: 100px;
+  margin-top: 70px;
 }
 
 .hero {
@@ -155,7 +154,7 @@ button p {
 
   /* hero section */
   .sec {
-    height: 120vh;
+    height: 90vh;
   }
   .hero h1 {
     font-size: 20px;
