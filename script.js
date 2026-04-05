@@ -1,7 +1,12 @@
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('ul');
 
-// const hamburger = document.getElementById('hamburger');
-// const navLinks = document.getElementById('nav-links');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active")
+})
 
-// hamburger.addEventListener('click', () => {
-//   navLinks.classList.toggle('active');
-// });
+document.querySelectorAll("a").forEach(n => n.addEventListener("click" , () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}));
