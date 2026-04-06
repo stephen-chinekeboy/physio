@@ -196,6 +196,9 @@ button p {
   .logo h1 {
     font-size: 25px;
   }
+  .sec {
+    height: 120vh;
+  }
   .hero {
     padding-top: 120px;
   }
