@@ -102,6 +102,7 @@ a {
   font-size: 50px;
   line-height: 65px;
   word-spacing: 20px;
+  width: 100%;
 }
 .hero-text .help {
   font-family: 'Open sans', sans-serif;
@@ -188,6 +189,33 @@ button p {
   span svg {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo h1 {
+    font-size: 25px;
+  }
+  .hero {
+    padding-top: 120px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  button {
+    padding: 15px 35px;
+  }
+  button p {
+    font-size: 18px;
+  }
+  .care,
+  .qualified,
+  .advanced {
+    padding: 5px 20px;
+  }
+  .hero-flex p {
+    font-size: 15px;
   }
 }
 
