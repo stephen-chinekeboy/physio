@@ -80,7 +80,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +189,7 @@ main {
 
   /* hero section */
   .sec {
-    height: 90vh;
+    height: 80vh;
   }
   .hero h1 {
     font-size: 20px;
