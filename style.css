@@ -23,13 +23,13 @@ nav {
   left: 0;
 }
 
-ul {
+.nav-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-li {
+.nav-list li {
   list-style: none;
 }
 
@@ -61,7 +61,7 @@ a {
   gap: 10px;
 }
 
-  ul p  {
+  .nav-list p  {
   border: 1px solid black;
   background: #0EA5A4;
   color: white;
@@ -136,7 +136,7 @@ main {
 }
 /* services section */
 .service {
-  /* background-color: #fafafa; */
+  padding: 40px;
 }
 .service-text {
   text-align: center;
@@ -153,7 +153,7 @@ main {
   text-transform: capitalize;
   font-weight: bold;
 }
-.flex-container {
+.grid-container {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -166,7 +166,7 @@ main {
   padding: 20px;
 }
 .services-text h3{
-  font-size: 24px;
+  font-size: 25px;
   font-family: 'Roboto' , sans-serif;
   text-transform: capitalize;
 }
@@ -182,6 +182,84 @@ main {
   align-items: center;
   fill: #0EA5A4;
 }
+/* about section */
+.about {
+  padding: 40px;
+}
+.flex-container {
+  display: flex;
+  gap: 40px;
+}
+.flex-1 h2 {
+  font-family: 'Roboto' , sans-serif;
+  color: #0EA5A4;
+  padding-bottom: 10px;
+}
+.flex-1 .passion {
+  font-family: 'Open sans', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  padding-bottom: 10px;
+}
+.flex-1 .amaka{
+  font-family: 'Open sans', sans-serif;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+.svg {
+  padding-top: 20px;
+}
+.svg .about-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.flex-1,
+.choose,
+.about-img {
+  flex: 1;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about-list li span{
+  line-height: 40px;
+}
+li .svg-text p {
+  font-size: 15px;
+  font-family: "inter" , sans-serif;
+  text-transform: capitalize;
+}
+.choose-list svg,
+.svg svg {
+  width: 30px;
+  height: 30px;
+}
+.choose {
+  background-color: #0ea5a528;
+  border-radius: 10px;
+}
+.choose .choose-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 10px 30px 30px;
+  line-height: 40px;
+  width: 100%;
+}
+.choose-text p {
+  font-size: 15px;
+  font-family: "inter" , sans-serif;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+
 @media (max-width: 480px) {
   .logo h1 {
     font-size: 20px;
@@ -207,6 +285,9 @@ main {
   button p {
     font-size: 15px;
   }
+  main {
+    padding: 0;
+  }
   .care,
   .qualified,
   .advanced {
@@ -223,10 +304,18 @@ main {
     width: 40px;
     height: 40px;
   }
-
-  main {
+  .service {
     padding: 20px;
   }
+
+  .flex-container {
+    flex-direction: column;
+  }
+  .choose .choose-list li {
+    padding: 20px;
+    line-height: 20px;
+  }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -276,7 +365,7 @@ main {
   transform: translateY(-8px) rotate(-45deg);
  }
 
- ul {
+ .nav-list {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -294,11 +383,11 @@ main {
     margin: 16px 0;
   }
 
-  ul.active {
+  .nav-list.active {
     left: 0;
   }
 
-   ul p {
+   .nav-list p {
     background-color: white;
     color: #333;
     padding: 10px 30px;
