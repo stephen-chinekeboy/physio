@@ -326,17 +326,19 @@ li .svg-text p {
     height: 90vh;
   }
   .hero {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .hero-text h1 {
     font-size: 30px;
   }
-
   button {
     padding: 15px 35px;
   }
   button p {
     font-size: 18px;
+  }
+  main {
+    padding: 0;
   }
   .care,
   .qualified,
@@ -345,6 +347,26 @@ li .svg-text p {
   }
   .hero-flex p {
     font-size: 15px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .choose .choose-list li {
+    line-height: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .choose .choose-list li {
+    padding: 20px 30px;
   }
 }
 
